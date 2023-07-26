@@ -8,3 +8,6 @@ app.listen (3000, () => console.log ("servidor andando"));
 app.get ('/', function(req, res){
     res.sendFile(path.resolve(__dirname, "./views/home.html"))
    });
+app.get ('/login', function(req, res){
+    res.sendFile(path.resolve(__dirname, "./views/login.html"))
+   });
