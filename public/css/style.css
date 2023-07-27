@@ -249,10 +249,6 @@ header .form{
     .burger-menu{
         display: none;
     }
-    .banner{
-        display:flex;
-        flex-wrap: wrap;
-    }
 }
 .descripción-producto{
     flex-wrap: wrap;
