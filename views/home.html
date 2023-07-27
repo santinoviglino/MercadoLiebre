@@ -10,27 +10,27 @@
 </head>
 <body>
    <header>
-    <section>
-    <img class="logo" src=/images/logo-mercado-liebre.svg width="200px">
-    
-    <br>
-    <p class="navbar">Buscar productos, marcas</p>
-    <img class="buscador" src="/images/magnifying-glass-solid.svg" width="21px" height="21px">
-    <br>
-    <p class="p"><img src="/images/hand-holding-dollar-solid.svg"  width="15" height="12">Comprá en cuotas y sin tarjeta de crédito</p>
-    </section>
+    <div class="top-header">
+        <div class="logo"> 
+            <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+        </div>
+        <div class="navbar" action="#" method="GET">
+            <div>Buscar productos, marcas y más</div>
+        </div>
+        <div class="buscador"><i class="fa fa-search"></i></div>
+        <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+    </div>
     <nav>
-        <ul type="none">
-            <li href="#">Ofertas</a></li>
-            <li href="#">Tiendas Oficiales</a></li>
-            <li href="#">Vender</a></li>
-            <li href="#">Ayuda</a></li>
+        <ul>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
         </ul>
-    <br>
-        <ul type="none">
-            <li><a href="/register">Creá tu cuenta<img class="img" src="/images/id-card-regular.svg"  width="15" height="12"></a></li>
-            <li><a href="/login">Ingresá<img class="img" src="/images/right-to-bracket-solid.svg"  width="15" height="12"></a></li>
-            <li><a href="#">Mis compras<img class="img" src="/images/basket-shopping-solid.svg"  width="15" height="12"></a></li>
+        <ul>
+            <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+            <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
         </ul>
     </nav>
     <div class="burger-menu">
@@ -38,6 +38,7 @@
     </div>
         <br>
    </header>
+</section>
    <main>
     <h3>Basado en tus últimas vistas</h3>
    <section>
@@ -49,7 +50,7 @@
         
         <div class="descripción-producto">
         <img class="camión"src= "/images/truck-solid (1).svg" width="20px" height="20px">
-        <div>$6.770</div>
+        <div class="precio">$6.770</div>
     <p class="descuento">40% off</p>
     
     <b class="descripción">Cafetera Moulinex</b>
@@ -62,7 +63,7 @@
      <img class="borde" src="/images/img-macbook-pro-2019.jpg" width="75%">
      <div class="descripción-producto">
      <img class="camión"src="/images/truck-solid (1).svg" width="20px" height="20px">
-     <div>$230.000</div>
+     <div class="precio">$230.000</div>
     <p class="descuento">20% off</p>
     
     <b class="descripción">MacBook Pro 2019</b>
@@ -73,7 +74,7 @@
      <img class="borde" src="/images/img-samsung-galaxy-s10.jpg" width="75%">
      <div class="descripción-producto">
      <img class="camión"src="/images/truck-solid (1).svg" width="20px" height="20px">
-     <div>$70.500</div>
+     <div precio="precio">$70.500</div>
     <p class="descuento">10% off</p>
     
     
@@ -85,7 +86,7 @@
      <img class="borde" src="/images/img-tv-samsung-smart.jpg" width="75%">
      <div class="descripción-producto">
      <img class="camión"src="/images/truck-solid (1).svg" width="20px" height="20px">
-     <div>$23.200</div>
+     <div class="precio">$23.200</div>
     <p class="descuento">5% off</p>
   
     
@@ -101,7 +102,7 @@
         
         <div class="descripción-producto">
         <img class="camión"src= "/images/truck-solid (1).svg" width="20px" height="20px">
-        <div>$6.770</div>
+        <div class="precio">$6.770</div>
     <p class="descuento">40% off</p>
     
     <b class="descripción">Cafetera Moulinex</b>
@@ -113,7 +114,7 @@
      <img class="borde" src="/images/img-macbook-pro-2019.jpg" width="75%">
      <div class="descripción-producto">
      <img class="camión"src="/images/truck-solid (1).svg" width="20px" height="20px">
-     <div>$230.000</div>
+     <div class="precio">$230.000</div>
     <p class="descuento">20% off</p>
     
     
@@ -125,7 +126,7 @@
      <img class="borde" src="/images/img-samsung-galaxy-s10.jpg" width="75%">
      <div class="descripción-producto">
      <img class="camión"src="/images/truck-solid (1).svg" width="20px" height="20px" >
-     <div>$70.500</div>
+     <div class="precio">$70.500</div>
     <p class="descuento">10% off</p>
     
     <b class="descripción">Samsung Galaxy S10</b>
@@ -136,7 +137,7 @@
      <img class="borde" class="borde" src="/images/img-tv-samsung-smart.jpg" width="78%">
      <div class="descripción-producto">
      <img class="camión"src="/images/truck-solid (1).svg" width="20px" height="20px">
-     <div>$23.200</div>
+     <div class="precio">$23.200</div>
     <p class="descuento">5% off</p>
     
     <b class="descripción">SmartTv Samsung 43"</b>

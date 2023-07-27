@@ -7,40 +7,74 @@ body {
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
 }
-header {
-    background-color: rgb(247,228,17);
-    font-size: 13px;
-    font-family: 'Roboto', sans-serif;
+p{
+    font-size: 12px;
 }
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
 .navbar{
     background-color: #ffffff;
+    border: 1px solid #727272;
     color: #666;
-    margin-left: 20px;
-    border: 1px solid #7c7c7c;
-    border-radius: 5px;
-    display: inline-block;
     padding: 2px;
-    margin-bottom: 0px;
+    border-radius: 20px;
+    margin-left: 10%;
     position: relative;
+    height: 20%;
+    width: 80%
 }
+
 .buscador{
     background-color: #ffffff;
+    border: 1px solid #727272;
     color: #666;
-    margin-left: 20px;
-    border: 1px solid #7c7c7c;
-    border-radius: 5px;
-    display: inline-block;
-    padding: 2px;
-
-}
-.p{
-    text-align: center;
-    margin: 0px;
-    margin-top: 10px;
-    position: relative;
-}
-ul{
-    padding: 0px;
+    border-radius: 20px;
+    margin-bottom: 6.5%;
+    padding-left: 0.4%;
+    padding-right: 0.4%;
+    padding-top: 0.3%;
 }
 h3{
    font-size: 20px;
@@ -49,10 +83,12 @@ h3{
    text-decoration: underline;
 }
 div{
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: 13px;
     text-align: left;
-    margin-left: 10px;
+}
+.precio{
+    font-size: 20px;
+    margin-left: 10px
 }
 .descuento{
     font-size: 15px;
@@ -129,6 +165,7 @@ footer{
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 30px;
+    font-size: 15px;
 }
 .copyright{
     text-align: left;
@@ -187,44 +224,35 @@ main section > article:hover{
         flex-wrap: wrap;
         justify-content: space-evenly;
        }
-       header{
-     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-bottom: 2%;
-       }
-      header > .navbar{
-        text-align: left;
-    width: 45%;
-    margin-left: 10%;
-    height: 10%;
-    margin-top: 30px;
+       div.top-header {
+        flex-wrap: nowrap;
     }
-    header > nav {
-        text-align: left;
-        top: 2%;
-        right: 50%;
-        position: relative;
-        position: 2;
-    }            
-    header > .p{
-        text-align: right;
-        left: 40%;
-        position: relative;
-        position: 1;
-        top: 10%;
+
+    header nav {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
- .logo{
-    width: 300px;
- }
- .buscador{
-    top: 30px;
-    right: 25px;
-    position: relative;
- }
- header > .burger-menu{
- display: none;
- }
+    header div.logo,
+header .form{
+    width: 70%;
+}
+
+    header nav ul {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 45%;
+        justify-content: space-evenly;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .banner{
+        display:flex;
+        flex-wrap: wrap;
+    }
 }
 .descripción-producto{
     flex-wrap: wrap;
@@ -238,49 +266,5 @@ main section > article:hover{
 @media(min-width: 1020px){
     main section article {
         width: 20%;
-    }
-    main section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-       }
-       header{
-     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly
-       }
-      header > .navbar{
-        text-align: left;
-    width: 45%;
-    margin-left: 10%;
-    height: 10%;
-    margin-top: 30px;
-    }
-    header > nav {
-        text-align: center;
-        top: 0%;
-        right: -20%;
-        position: relative;
-    }
-    header > .p{
-        text-align: right;
-        left: -35%;
-        position: relative;
-        position: 1;
-        top: -10%;
-    }
- nav {
-    position: relative;
- }
- .logo{
-    width: 300px;
- }
- .buscador{
-    top: 30px;
-    right: 25px;
-    position: relative;
- }
- header > .burger-menu{
-    display: none;
     }
 }
