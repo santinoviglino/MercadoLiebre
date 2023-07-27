@@ -1,0 +1,36 @@
+.fa-solid{
+    text-align: center;
+    width: 10em;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 2.5em
+}
+.fa-solid:hover{
+ color: #1259c3;
+    transition: color, 450ms;
+}
+.fa-gift{
+    text-align: center;
+    width: 10em;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 2.5em
+}
+.fa-gift:hover{
+    color: #1259c3;
+    transition: color, 450ms;  
+}
+.fa-user-shield{
+    text-align: center;
+    width: 10em;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 2.5em
+}
+.fa-user-shield:hover{
+    color: #1259c3;
+    transition: color, 450ms;
+}
