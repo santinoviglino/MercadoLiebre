@@ -44,6 +44,37 @@ rel="stylesheet" />
    <section class="banner">
     <img src="images/img-home-banner.jpg" alt="Banner de ofertas" width="100%">
 </section>
+<form class="formulario" action="/register" method="post">
+    <h3>Ingresá tus datos</h3>
+    <input type="text" name="nombre-y-apellido" placeholder="Nombre y apellido">
+    <input type="text" name="usuario" placeholder="Nombre de usuario">
+    <input type="email" name="email" placeholder="E-mail">
+    <h3>Tu fecha de nacimiento</h3>
+    <input type="date" name="nacimiento">
+    <h3>Tu domicilio</h3>
+    <input type="text" name="domicilio" placeholder="Domicilio">
+    <h3>¿Cómo piensas utilizar tu perfil?</h3>    
+    <label>
+        <label><input type="radio" name="opcion">Comprador</label>
+        <label><input type="radio" name="opcion">Vendedor</label>
+    </label>
+    <h3>¿Qué le interesaría ver?</h3>
+    <label class="checkbox">
+        <label><input type="checkbox" name="opcion">Electrónica</label>
+        <label><input type="checkbox" name="opcion">Productos saludables</label>
+        <label><input type="checkbox" name="opcion">Hogar</label>
+        <label><input type="checkbox" name="opcion">Juguetería</label>
+        <label><input type="checkbox" name="opcion">Moda</label>
+        <label><input type="checkbox" name="opcion">Perfumería</label>
+    </label>
+    <h3>Foto de usuario</h3>
+    <input type="file" name="foto">
+    <h3>Contraseña</h3>
+    <input type="password" name="constraseña" minlength="10" placeholder="Ingrese una contraseña entre 6 y 12 caracteres" required minlength="6" maxlength="12">
+    <h3>Confirmá tu contraseña</h3>
+    <input type="password" name="constraseña-confirmar" placeholder="Repetí tu contraseña" required minlength="6" maxlength="12">
+    <button type="submit" name="registrar">Registrarse</button>
+</form>
 </main>
 <footer>
     <i class="fa-solid fa-credit-card"></i>
