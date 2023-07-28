@@ -1,36 +1,30 @@
-.fa-solid{
-    text-align: center;
-    width: 10em;
-    margin-top: 40px;
-    margin-bottom: 5px;
-    color: black;
-    font-size: 2.5em
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
-.fa-solid:hover{
- color: #1259c3;
-    transition: color, 450ms;
+.formulario input {
+    border: 1px solid #727272;
+    border-radius: 20px;
+    padding: 10px;
+    width: 40%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
 }
-.fa-gift{
-    text-align: center;
-    width: 10em;
-    margin-top: 40px;
-    margin-bottom: 5px;
-    color: black;
-    font-size: 2.5em
-}
-.fa-gift:hover{
-    color: #1259c3;
-    transition: color, 450ms;  
-}
-.fa-user-shield{
-    text-align: center;
-    width: 10em;
-    margin-top: 40px;
-    margin-bottom: 5px;
-    color: black;
-    font-size: 2.5em
-}
-.fa-user-shield:hover{
-    color: #1259c3;
-    transition: color, 450ms;
-}
+button{
+        border: 1px solid #727272;
+        border-radius: 20px;
+        background-color: #ffffff;
+        color: #000000;
+        padding: 10px;
+        width: 20%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+button:hover{
+        background-color: #1259c3;
+        color: #ffffff;
+        transition: color, background-color, 450ms;  
+    }
