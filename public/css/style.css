@@ -123,60 +123,36 @@ div{
     border-radius: 5px;
     margin: auto;
 }
-footer{
+footer {
     text-align: center;
-    background-color: white;
-    font-size: 13px;
-    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    padding: 15px 0px 0px 0px;
+
 }
-.fa-solid{
+
+footer section > i{
+    color: #000000;
     text-align: center;
-    width: 10em;
-    margin-top: 40px;
-    margin-bottom: 5px;
-    color: black;
-    font-size: 2.5em
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition-duration: 450ms;
+    transition-timing-function: ease-in-out;
+    padding: 0px 50px 0px 50px;
 }
-.fa-solid:hover{
- color: #1259c3;
-    transition: color, 450ms;
-}
-.fa-gift{
-    text-align: center;
-    width: 10em;
-    margin-top: 40px;
-    margin-bottom: 5px;
-    color: black;
-    font-size: 2.5em
-}
-.fa-gift:hover{
-    color: #1259c3;
-    transition: color, 450ms;  
-}
-.fa-user-shield{
-    text-align: center;
-    width: 10em;
-    margin-top: 40px;
-    margin-bottom: 5px;
-    color: black;
-    font-size: 2.5em
-}
-.fa-user-shield:hover{
-    color: #1259c3;
-    transition: color, 450ms;
-}
-.titulos{
+
+footer section > h4{
     font-size: 16px;
 }
-.texto-pie{
-    margin-bottom: 0px;
-    margin-left: 40px;
-    margin-right: 40px;
+
+footer section > p{
+    font-size: 12px;
+    margin-top: 5px;
     margin-bottom: 30px;
-    font-size: 15px;
 }
-.copyright{
-    text-align: left;
+
+footer section > i:hover{
+    color: #1259c3;
+    transition: color, 450ms;
 }
 main{
     background-color: rgb(233, 231, 231);
@@ -257,6 +233,21 @@ header .form{
     .burger-menu{
         display: none;
     }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 0;
+    }
+
+    footer section {
+        width: 30%;
+    }
+
+    .licencia{
+        width: 100%;
+        text-align: left;
+    }
 }
 .descripción-producto{
     flex-wrap: wrap;
@@ -270,5 +261,20 @@ header .form{
 @media(min-width: 1020px){
     main section article {
         width: 20%;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 0;
+    }
+
+    footer section {
+        width: 30%;
+    }
+
+    .licencia{
+        width: 100%;
+        text-align: left;
     }
 }
