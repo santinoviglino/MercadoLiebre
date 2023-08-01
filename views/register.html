@@ -44,15 +44,15 @@ rel="stylesheet" />
    <section class="banner">
     <img src="images/img-home-banner.jpg" alt="Banner de ofertas" width="100%">
 </section>
-<form class="formulario" action="/register" method="post">
+<form class="formulario" action="/" method="get">
     <h3>Ingresá tus datos</h3>
-    <input type="text" name="nombre-y-apellido" placeholder="Nombre y apellido">
-    <input type="text" name="usuario" placeholder="Nombre de usuario">
-    <input type="email" name="email" placeholder="E-mail">
+    <input type="text" name="nombre-y-apellido" placeholder="Nombre y apellido" required>
+    <input type="text" name="usuario" placeholder="Nombre de usuario" required>
+    <input type="email" name="email" placeholder="E-mail" required>
     <h3>Tu fecha de nacimiento</h3>
-    <input type="date" name="nacimiento">
+    <input type="date" name="nacimiento" required>
     <h3>Tu domicilio</h3>
-    <input type="text" name="domicilio" placeholder="Domicilio">
+    <input type="text" name="domicilio" placeholder="Domicilio" required>
     <h3>¿Cómo piensas utilizar tu perfil?</h3>    
     <label>
         <label><input type="radio" name="opcion">Comprador</label>
@@ -68,11 +68,11 @@ rel="stylesheet" />
         <label><input type="checkbox" name="opcion">Perfumería</label>
     </label>
     <h3>Foto de usuario</h3>
-    <input type="file" name="foto">
+    <input type="file" name="foto" required>
     <h3>Contraseña</h3>
-    <input type="password" name="constraseña" minlength="10" placeholder="Ingrese una contraseña entre 6 y 12 caracteres" required minlength="6" maxlength="12">
+    <input type="password" name="constraseña" minlength="10" placeholder="Ingrese una contraseña entre 6 y 12 caracteres" minlength="6" maxlength="12" required>
     <h3>Confirmá tu contraseña</h3>
-    <input type="password" name="constraseña-confirmar" placeholder="Repetí tu contraseña" required minlength="6" maxlength="12">
+    <input type="password" name="constraseña-confirmar" placeholder="Repetí tu contraseña" minlength="6" maxlength="12" required>
     <button class="boton" type="submit" name="registrar">Registrarse</button>
 </form>
 </main>
